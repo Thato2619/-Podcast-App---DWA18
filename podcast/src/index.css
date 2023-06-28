@@ -29,6 +29,8 @@ a:hover {
 }
 
 body {
+  background-color: #000000;
+  color:#e9e2e7;
   margin: 0;
   display: flex;
   place-items: center;
