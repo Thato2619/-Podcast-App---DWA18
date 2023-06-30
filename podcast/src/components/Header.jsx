@@ -1,12 +1,18 @@
 import React from 'react'
+import { GiHeadphones } from 'react-icons/gi'
+import Shows from '../assets/genre/genres'
 
 function Header() {
   return (
-    <div className='flex justify-between items-center w-full h-10 px-6 py-8 bg-[#090708] text-[#e9e2e7] '>
-        <div className='flex cursor-pointer'>
-            <h1 className=' text-[#a07e96] font-tilt'>UNPLUGGED</h1>
+
+    <div className='flex justify-between items-center border-2 border-[#a07e96] p-4'>
+        <div className='flex items-center gap-1'>
+            <GiHeadphones size={30} className="text-[#a07e96]"/>
+            <span className='text-xl font-tilt text=[#a07e96]'>UNPLUGGED PODCAST</span>
         </div>
     </div>
+
+    
   )
 }
 

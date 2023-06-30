@@ -10,12 +10,8 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Header />
-      
-      <div>
-       <Navbar />
-      </div>
-      
       <AllShowList />
     
     </>
