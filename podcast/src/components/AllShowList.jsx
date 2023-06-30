@@ -1,5 +1,5 @@
 import React from 'react'
-import {Shows} from '../assets/genre/genres'
+import Shows from '../assets/genre/genres'
 function AllShowList() {
   return (
     <div>
