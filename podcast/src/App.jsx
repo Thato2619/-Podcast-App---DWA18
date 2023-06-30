@@ -4,12 +4,18 @@ import './App.css'
 import './index.css'
 
 import Navbar from './components/Navbar'
+import Header from './components/Header'
 
 function App() {
 
   return (
     <>
-      <Navbar />
+      <Header />
+      
+      <div>
+       <Navbar />
+      </div>
+      
       <AllShowList />
     
     </>

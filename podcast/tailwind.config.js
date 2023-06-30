@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      tilt: ["Tilt Prism", "cursive"]
+    }
   },
   plugins: [],
 }
