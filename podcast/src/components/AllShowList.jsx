@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Shows from '../assets/genre/genres'
+import {useEffect} from 'react'
+
+
+
 function AllShowList() {
+
   return (
     <div>
+        
          <div className='"  animate-slideup rounded-lg cursor-pointer'>
         <div className=' backdrop-blur animate-slideup'>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 relative w-full h-56 group'>
@@ -30,6 +36,7 @@ function AllShowList() {
     </div>
 
     </div>
+
     </div>
   )
 }
