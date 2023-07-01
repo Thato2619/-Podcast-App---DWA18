@@ -1,4 +1,4 @@
-import React from 'react'
+/*mport React from 'react'
 import comedyList from '../utils/module/comedyList'
 import Link from 'next/link'
 import comedy from '../utils/assets/showGenres/comedy'

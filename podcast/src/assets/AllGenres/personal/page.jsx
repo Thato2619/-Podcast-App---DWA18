@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import personalGrowth from '../utils/assets/showGenres/personalGrowth'
 import {growth} from './personalGrowth'
 import genres from '@/app/utils/assets/genre/genres';
@@ -84,4 +84,4 @@ function page() {
   )
 }
 
-export default page
+export default page*/
