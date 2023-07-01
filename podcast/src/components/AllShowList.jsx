@@ -11,7 +11,7 @@ function AllShowList() {
                     <div className ='shadow-lg rounded-lg p-4 bg-white/5 bg-opacity-80 backdrop-blur' key={show.id}>
                         <img className="rounded-t-lg" alt="POD_IMG" src={show.image}/>
                         <div className='p-3'>
-                            <h3 className='text-3xl font-bold text-[#e9e2e7] mb-3'>{show.title}</h3>
+                            
                             <p className='text-lg text-[#e9e2e7]'> 
                             <span className='text-lg font-bold text-[#e9e2e7]'>Season:</span> 
                                 {show.seasons}</p>
