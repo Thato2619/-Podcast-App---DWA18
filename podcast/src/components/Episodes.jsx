@@ -1,28 +1,37 @@
 import React from 'react'
+import {useState} from 'react'
 import comedyShows from '../assets/AllGenres/comedy/comedyShows'
+import {BsFillPlayFill, BsFillPauseFill} from 'react-icons/bs'
+import {AiFillHeart} from 'react-icons/ai'
 
 function Episodes() {
+
+    const [favourited, setFavourited] = useState(false)
   return (
-    <div>
-        <div classsName="pb-10 bg-[#202020] text-[#e9e2e7] text-sm flex flex-wrap justify-between border border-l-0 border-r-0 border-t-[0.4px] border-b-[1px] border-[#a07e96] py-4 px-6">
-          <a href='/'>
-            <button className="bg-[#090708] hover:bg-[#a07e96] cursor-pointer border-2 border-[#a07e96] rounded-full text-center px-3 py-1 ">SEASONS</button>
-          </a>
+    <div className='flex items-center justify-between space-x-20 cursor-default hover:bg-white/10 py-2 px04 rounded-lg group transition ease-out'>
+        
+        <div className='flex items-center'>
 
-          <tbody>
-              {comedyShows.map((comPod, id) => (
-                  <tr key={id} className='bg-[#090708] h-12 text-[#e9e2e7] hover:bg-[#a07e96] '>
-                      <td className='text-center'>{id}</td>
-                      <td>{comPod.title}</td>
-                      <td>{}</td>
-                      <td></td>
-                  </tr>
-              ))
-
-              }
-          </tbody>
-       
-    </div>
+            <img  
+            src={comedyShows.map((comedy => comedy.image))} 
+            alt="" 
+            className='rounded-x1 h-12 w-12 object-cover mr-3'/>
+        </div>
+        <div>
+            <h4 className='text-[#e9e2e7] text-sm font-semibold truncate w-[450px]'>
+                <span className='text-[#e9e2e7] font-semibold'>EPISODE 1: </span>
+                From Commoner to Royalty
+            </h4>
+            <p className='text-[#a07e96] text-sm'>SEASON 1</p>
+        </div>
+        <div className='md:ml-auto flex items-center space-x-2.5'>
+            <div className='flex items-center rounded -full  w-[85px] h-[10] relative cursor-pointer group-hover: border-white/40'>
+                <AiFillHeart 
+                className={`text-xl ml-3 hover:scale-125 transition-all duration-150 ease-out ${favourited ? "text-[#a07e96]" : "text-[#868686]" }`}
+                onClick={() => setFavourited(!favourited)}
+                />
+            </div>
+        </div>
     </div>
   )
 }

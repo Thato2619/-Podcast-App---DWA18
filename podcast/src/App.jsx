@@ -7,6 +7,7 @@ import './index.css'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import PuffLoader from "react-spinners/PuffLoader";
+import Episodes from './components/Episodes'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       setLoading(true)
       setTimeout(() => {
           setLoading(false)
-      }, 7000)
+      }, 3000)
   }, []) 
 
   return (
@@ -38,8 +39,7 @@ function App() {
       <>
       <Navbar />
       <Header />
-      <AllShowList  />
-    
+      <Episodes />
     </>
 }
     </div>
