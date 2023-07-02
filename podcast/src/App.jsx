@@ -9,9 +9,9 @@ import Header from './components/Header'
 import PuffLoader from "react-spinners/PuffLoader";
 
 
-
 function App() {
   const [loading, setLoading] = useState(false);
+  
 
   useEffect(() => {
       setLoading(true)
@@ -33,12 +33,12 @@ function App() {
        data-testid="loader"
      />
 
-       :
-     
-       <>
+      :
+    
+      <>
       <Navbar />
       <Header />
-      <AllShowList />
+      <AllShowList  />
     
     </>
 }

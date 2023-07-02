@@ -1,11 +1,16 @@
 import React from 'react'
-import {useState, useEffect} from 'react'
+import {useEffect, useRef} from 'react'
 import axios from 'axios'
 import { GrSearch } from 'react-icons/gr'
-import Shows from '../assets/genre/genres'
+import shows from '../assets/genre/genres'
 
-function SearchBar({onSearch}) {
-    const [searchPod, setSearchPod] = useState("")
+function SearchBar({searchPod, setSearchPod}) {
+    
+    const inputRef = useRef()
+
+    /*useEffect(() => {
+        inputRef.current.focus();
+    }, [])*/
 
     const handleChange = (event) => {
         setSearchPod(event.target.value);

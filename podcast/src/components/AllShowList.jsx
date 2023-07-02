@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Shows from '../assets/genre/genres'
 import {useEffect} from 'react'
 
