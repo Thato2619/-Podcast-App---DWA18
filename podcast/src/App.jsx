@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import PuffLoader from "react-spinners/PuffLoader";
 import Episodes from './components/Episodes'
+import Hero from './components/Hero'
 
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
       <>
       <Navbar />
       <Header />
-      <Episodes />
+      <Hero />
+      <AllShowList />
     </>
 }
     </div>
