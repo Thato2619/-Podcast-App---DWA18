@@ -39,7 +39,9 @@ function Hero() {
         setCurrentIndex(newIndex)
     };
 
-    
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex)
+    }
     
   return (
     <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative'>
@@ -62,7 +64,7 @@ function Hero() {
               <div 
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className='text-sxl cursor-pointer '>
+              className='text-sxl cursor-pointer text '>
                   <RxDotFilled />
               </div>
           ))}
