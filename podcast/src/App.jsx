@@ -9,9 +9,19 @@ import Header from './components/Header'
 import PuffLoader from "react-spinners/PuffLoader";
 import Episodes from './components/Episodes'
 import Hero from './components/Hero'
+import { useNavigate } from 'react-router-dom'
 
+{/*
+const navigate = useNavigate();
 
+useEffect(() => {
+  const unlisten = navigate.listen(() => {
+    console.log("Are you sure you want to leave?")
+  })
+}, [])*/
+}
 function App() {
+ 
   const [loading, setLoading] = useState(false);
   
 
